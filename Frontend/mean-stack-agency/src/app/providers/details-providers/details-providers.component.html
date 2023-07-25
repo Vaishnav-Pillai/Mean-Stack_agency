@@ -1,0 +1,55 @@
+<section class="page-section" id="details">
+    <div class="container px-4 px-lg-5">
+      <h2 class="text-center mt-0">{{ company_name }}</h2>
+      <hr class="divider" />
+      <div class="row my-4">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Description</h5>
+              <p class="card-text">{{ description }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tag-Line</h5>
+              <p class="card-text">{{ tagline }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Address</th>
+              <th scope="col">City</th>
+              <th scope="col">State</th>
+              <th scope="col">Zip-Code</th>
+              <th scope="col">Phone</th>
+              <th scope="col">E-Mail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">{{ id }}</td>
+              <td scope="row">{{ address }}</td>
+              <td scope="row">{{ city }}</td>
+              <td scope="row">{{ state }}</td>
+              <td scope="row">{{ postal_code }}</td>
+              <td scope="row">{{ phone }}</td>
+              <td scope="row">{{ email }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row my-4">
+          <div class="col-sm-12 text-center">
+              <a href="providers/edit/{{ id }}" class="btn btn-secondary btn-md my-1">Edit Provider</a>
+          </div>
+      </div>
+    </div>
+  </section>
